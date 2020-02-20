@@ -78,35 +78,35 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: 'In what HTML element do we put in JavaScript code?',
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: '<script>', correct: true },
+      { text: '<html>', correct: false }
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'How do you call an alert box ?',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'alert', correct: true },
+      { text: 'call', correct: false },
+      { text: 'alert.box', correct: false },
+      { text: 'alert.call', correct: false }
     ]
   },
   {
-    question: 'Is web development fun?',
+    question: 'What was the first browser to incorporate JS?',
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: 'Mozilla', correct: false },
+      { text: 'Netscape', correct: true },
+      { text: 'Chrome', correct: false },
+      { text: 'Explorer', correct: false }
     ]
   },
   {
-    question: 'What is 4 * 2?',
+    question: 'What is the extension called on a JavaScript page?',
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: '.html', correct: false },
+      { text: '.js', correct: true }
     ]
   }
 ]
