@@ -18,6 +18,18 @@ function startGame() {
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
+
+  var secondsLeft = 60;
+function setTime() {
+    var timerInterval = setInterval(function() {
+      secondsLeft--;
+      timer.textContent = "Time: " + secondsLeft;
+      if(secondsLeft === 0) {
+        clearInterval(timerInterval);
+        scorePage();
+      }
+    }, 1000);
+  }
 }
 
 function setNextQuestion() {
