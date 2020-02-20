@@ -19,8 +19,11 @@ function startGame() {
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
 
+  var secondsLeft = 60
+  var timer = document.getElementById("time")
   var secondsLeft = 60;
 function setTime() {
+  setTime()
     var timerInterval = setInterval(function() {
       secondsLeft--;
       timer.textContent = "Time: " + secondsLeft;
